@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ml.ananthakumar.androidlabweek4.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <Button
+        android:id="@+id/alertdialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AlertDialog"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="29dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/autocomplete"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/autocomplete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Autocomplete"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="18dp"
+        app:layout_constraintTop_toBottomOf="@+id/alertdialog"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/audiorecorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Audio recorder"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/texttovoice"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="27dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/audiomanager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Audiomanager"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/autocomplete"
+        android:layout_marginTop="22dp"
+        app:layout_constraintTop_toBottomOf="@+id/autocomplete" />
+
+    <Button
+        android:id="@+id/texttovoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text to Voice"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/typeface"
+        android:layout_marginStart="15dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintLeft_toLeftOf="@+id/typeface" />
+
+    <Button
+        android:id="@+id/typeface"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custom Typeface"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="71dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+</android.support.constraint.ConstraintLayout>
