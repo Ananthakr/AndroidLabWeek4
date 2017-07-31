@@ -21,12 +21,60 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AlertActivity" />
-        <activity android:name=".AutoCompleteActivity" />
-        <activity android:name=".AudioManagerActivity" />
-        <activity android:name=".AudioRecorderActivity" />
-        <activity android:name=".TextToSpeechActivity" />
-        <activity android:name=".TypefaceActivity"></activity>
+        <activity android:name=".AlertActivity"
+            android:parentActivityName="ml.ananthakumar.androidlabweek4.MainActivity" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ml.ananthakumar.androidlabweek4.MainActivity" />>
+
+        </activity>
+
+        <activity android:name=".AutoCompleteActivity"
+            android:parentActivityName="ml.ananthakumar.androidlabweek4.MainActivity" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ml.ananthakumar.androidlabweek4.MainActivity" />>
+
+        </activity>
+
+        <activity android:name=".AudioManagerActivity"
+            android:parentActivityName="ml.ananthakumar.androidlabweek4.MainActivity" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ml.ananthakumar.androidlabweek4.MainActivity" />>
+
+        </activity>
+
+        <activity android:name=".AudioRecorderActivity"
+            android:parentActivityName="ml.ananthakumar.androidlabweek4.MainActivity" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ml.ananthakumar.androidlabweek4.MainActivity" />>
+
+        </activity>
+
+        <activity android:name=".TextToSpeechActivity"
+            android:parentActivityName="ml.ananthakumar.androidlabweek4.MainActivity" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ml.ananthakumar.androidlabweek4.MainActivity" />>
+
+        </activity>
+
+        <activity android:name=".TypefaceActivity"
+            android:parentActivityName="ml.ananthakumar.androidlabweek4.MainActivity" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ml.ananthakumar.androidlabweek4.MainActivity" />>
+
+        </activity>
+        
     </application>
 
 </manifest>

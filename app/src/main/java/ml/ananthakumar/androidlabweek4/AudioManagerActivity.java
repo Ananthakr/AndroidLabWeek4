@@ -65,7 +65,7 @@ public class AudioManagerActivity extends AppCompatActivity {
 
     @OnClick(R.id.volplus) void volPlus(){
 
-        myAudioManager.adjustVolume(AudioManager.ADJUST_RAISE,AudioManager.FLAG_SHOW_UI);
+        myAudioManager.adjustStreamVolume(AudioManager.STREAM_MUSIC,AudioManager.ADJUST_RAISE,AudioManager.FLAG_SHOW_UI);
         Toast.makeText(this,"Volume increased",
                 Toast.LENGTH_LONG).show();
 
@@ -73,7 +73,7 @@ public class AudioManagerActivity extends AppCompatActivity {
 
     @OnClick(R.id.volminus) void volMinus(){
 
-        myAudioManager.adjustVolume(AudioManager.ADJUST_LOWER,AudioManager.FLAG_SHOW_UI);
+        myAudioManager.adjustStreamVolume(AudioManager.STREAM_MUSIC,AudioManager.ADJUST_LOWER,AudioManager.FLAG_SHOW_UI);
         Toast.makeText(this,"Volume decreased",
                 Toast.LENGTH_LONG).show();
 
